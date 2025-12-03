@@ -1,0 +1,98 @@
+.stats-grid:first-child::before {
+    content: "🔥";
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.stats-container .stats-grid:nth-child(3) {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.stats-container .stats-grid:nth-child(3) .stat-number,
+.stats-container .stats-grid:nth-child(3) .stat-label {
+    color: white;
+}
+
+/* è interessante il valore "all" per qualche motivo  */
+.stats-grid {
+    transition: all 0.3s;
+}
+
+.stats-grid:hover {
+    transition: all 0.3s;
+    translate: 0 -5px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.workout-plan:nth-child(3) {
+    border-left: 5px solid #f39c12;
+    background-color: #fff8ba;
+}
+
+.exercise-item:first-child,
+.exercise-item:last-child {
+    border-left-color: #2ecc71;
+    background: #f0fff4;
+}
+
+.exercise-item:nth-child(even)::before {
+    content: "⚡";
+    margin-right: 8px;
+    color: #f39c12;
+}
+
+.goal-input-group input,
+.goal-input-group select {
+transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.goal-input-group input:focus,
+.goal-input-group select:focus { outline: none;
+border-color: #667eea;
+box-shadow: 0 0 8px rgba(102, 126, 234, 0.3);
+}
+
+.save-btn:hover {
+background: #5a67d8; translate: 0 -2px;
+box-shadow: 0 5px 15px rgba (102, 126, 234, 0.4);
+}
+
+/* qui c'è un problema con il translateY / top, trova una soluzione migliore */
+.progress-fill::after {
+content: '65%';
+position: absolute;
+right: 10px;
+top: 50%;
+transform: translateY (-50%);
+color: white;
+font-size: 0.7rem;
+font-weight: bold;
+}
+
+.nav-item:hover {
+background: #34495e;
+color: #667eea;
+}
+
+.nav-item:first-child {
+background: #34495e;
+color: #667eea;
+}
+
+.quote-box::before {
+    content: '"';
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 3rem;
+    opacity: 0.3;
+}
+
+.quote-box::after {
+    content: '"';
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 3rem;
+    opacity: 0.3;
+}
